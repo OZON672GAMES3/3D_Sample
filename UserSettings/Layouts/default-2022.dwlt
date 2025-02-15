@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Scene
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 123
+  controlID: 124
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -385,7 +385,7 @@ MonoBehaviour:
     m_CachedPref: 1
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 25252
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 1
@@ -741,7 +741,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Shooter
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -749,15 +749,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Shooter
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\C#\Unity\UE Projects\3D_Sample
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 6c630000
-    m_LastClickedID: 25452
+    m_SelectedIDs: 2a630000
+    m_LastClickedID: 25386
     m_ExpandedIDs: 00000000166300002c63000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 204
+  m_DirectoriesAreaWidth: 207
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -926,9 +926,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a4620000
-      m_LastClickedID: 25252
-      m_ExpandedIDs: 1afbffff92620000a4620000b4620000be620000c2620000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 8eedffffd2f7ffff3af8ffffc4f8ffff1afbffff8e64000096640000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1321,9 +1321,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.1743416, y: -2.2788029, z: 6.0431437}
+    m_Target: {x: -3.0244293, y: -1.2912097, z: 4.184803}
     speed: 2
-    m_Value: {x: -1.1743416, y: -2.2788029, z: 6.0431437}
+    m_Value: {x: -3.0244293, y: -1.2912097, z: 4.184803}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1369,9 +1369,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2005877, y: 0.40493158, z: -0.09153937, w: -0.8873858}
+    m_Target: {x: -0.16051008, y: 0.49050388, z: -0.09246383, w: -0.8515462}
     speed: 2
-    m_Value: {x: -0.2005839, y: 0.4049239, z: -0.09153763, w: -0.887369}
+    m_Value: {x: -0.16064553, y: 0.4892167, z: -0.0922212, w: -0.85226476}
   m_Size:
     m_Target: 7.474922
     speed: 2

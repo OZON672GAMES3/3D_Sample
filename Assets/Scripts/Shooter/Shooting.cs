@@ -49,7 +49,7 @@ public class Shooting : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            _ray = new Ray(_startPointRay.position, _camera.transform.forward);
+            _ray = new Ray(_startPointRay.position, _camera.transform.forward += GetRandomVector());
 
             if (Physics.Raycast(_ray, out _raycastHit))
             {
@@ -59,5 +59,13 @@ public class Shooting : MonoBehaviour
         }
         
         Debug.DrawRay(_ray.origin, _ray.direction * 1000, Color.blue);
+    }
+
+    private Vector3 GetRandomVector()
+    {
+        return new Vector3(
+            Random.Range(0.1f, -0.1f),
+            Random.Range(0.1f, -0.1f),
+            Random.Range(0.1f, -0.1f));
     }
 }
