@@ -20,7 +20,7 @@ public class Display : MonoBehaviour
     // ReSharper disable Unity.PerformanceAnalysis
     private void GetTemperature()
     {
-        _text.text = $"Current temperature: {Random.Range(20, 30)}\u00b0C";
-        Debug.Log($"Current temperature: {Random.Range(20, 30)}\u00b0C");
+        // _text.text = $"Current temperature: {Random.Range(20, 30)}\u00b0C";
+        // Debug.Log($"Current temperature: {Random.Range(20, 30)}\u00b0C");
     }
 }
