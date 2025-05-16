@@ -8,9 +8,17 @@ namespace DefaultNamespace.InventorySimple
         [SerializeField] private InventoryUI _inventoryUI;
         [SerializeField] private Transform _dropPoint;
         [SerializeField] private GameObject _inventoryPanel;
+        [SerializeField] private ParticleSystem _explosion;
         
         private List<InventoryItem> _items = new();
         private bool _isInventoryOpen;
+        private InventoryPlayerLogic _playerLogic;
+        private Bomb _bomb;
+
+        private void Start()
+        {
+            _playerLogic = GetComponent<InventoryPlayerLogic>();
+        }
 
         public void AddItem(ItemData itemData)
         {
@@ -48,6 +56,30 @@ namespace DefaultNamespace.InventorySimple
             RemoveItem(item.data);
         }
 
+        public void TakeHealth(int index)
+        {
+            if (index < 0 || index >= _items.Count)
+                return;
+            
+            var item = _items[index];
+            RemoveItem(item.data);
+            _playerLogic.SetHealth(10);
+        }
+
+        private void ExplodeBomb(int index, Transform dropPoint)
+        {
+            if (index < 0 || index >= _items.Count)
+                return;
+
+            var item = _items[index];
+            GameObject go = Instantiate(item.data.prefab, dropPoint.position, Quaternion.identity);
+            Bomb bomb = go.GetComponent<Bomb>();
+            RemoveItem(item.data);
+            
+            if (bomb)
+                bomb.GetExplosion();
+        }
+
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -58,6 +90,14 @@ namespace DefaultNamespace.InventorySimple
             
             if (Input.GetKeyDown(KeyCode.Q))
                 DropItem(0, _dropPoint);
+            
+            if (Input.GetKeyDown(KeyCode.R))
+                TakeHealth(0);
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                ExplodeBomb(1, _dropPoint);
+            }
         }
     }
 }
