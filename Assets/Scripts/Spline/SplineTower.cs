@@ -12,9 +12,6 @@ namespace DefaultNamespace.Spline
         
         [SerializeField] private float _attackRadius = 10f;
         [SerializeField] private float _attackRate = 1f;
-        [SerializeField] private float _bulletSpeed = 20f;
-        [SerializeField] private float _rotationSpeed = 30f;
-        [SerializeField] private float _fireAngleTrashhold = 5f;
 
         private List<Transform> _enemies = new();
         private Transform _target;
